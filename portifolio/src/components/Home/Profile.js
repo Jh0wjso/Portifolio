@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from 'react-typical';
+import './Profile.css'
 
 export default function Profile() {
   return (
@@ -13,18 +14,18 @@ export default function Profile() {
                 href="https://www.facebook.com/jhonatan.silverio.374"
                 target={"_blank"}
                 >
-                <i className="fa fa-facebook-square text-white" />
+                <i className="fa fa-facebook-square text-white mr-4" />
                 </a>
 
                 <a href="https://twitter.com/Jho_JSO" target={"_blank"}>
-                <i className="fa fa-twitter-square text-white" />
+                <i className="fa fa-twitter-square text-white mr-4" />
                 </a>
 
                 <a
                 href="https://www.linkedin.com/in/jhonatansilverio/"
                 target={"_blank"}
                 >
-                <i className="fa fa-linkedin-square text-white" />
+                <i className="fa fa-linkedin-square text-white mr-4" />
                 </a>
                 <a
                 href="https://www.instagram.com/jhojso/"
@@ -67,9 +68,7 @@ export default function Profile() {
                                 "Ciêntista da Computação",
                                 2000,
                                 "Croos Platform Dev",
-                                2000,
-                                "React/React Native Dev",
-                                2000,
+                                2000
                             ]}
                         />
                     </h1>
@@ -91,7 +90,6 @@ export default function Profile() {
         </div>
         <div className="profile-picture">
             <div className="profile-picture-background">
-
             </div>
         </div>
       </div>
