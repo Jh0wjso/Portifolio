@@ -70,7 +70,7 @@ export default function Profile() {
                                     2000,
                                     "Ciêntista da Computação",
                                     2000,
-                                    "Croos Platform Dev",
+                                    "Cross Platform Dev",
                                     2000
                                 ]}
                             />

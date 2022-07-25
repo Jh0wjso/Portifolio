@@ -1,0 +1,55 @@
+.aboutMe{
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    margin-top: 1vh;
+    display: flex;
+}
+
+.my-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+}
+
+.picture-background{
+    height: 400px;
+    width: 400px;
+    background-image: url("../../assets/Home/profilephoto.jpg");
+    background-size: cover;
+}
+
+.whoAmI{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.aboutMeContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.highlight-text{
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+}
+
+.aboutMeText{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+@media screen and (max-width: 300px){
+    .aboutMe{
+        display: flex;
+        flex-direction: column;
+    }
+}
