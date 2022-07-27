@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavBar_Component() {
   return (
-    <div className='d-flex justify-content-center w-screen'>
+    <div className='d-flex justify-content-center w-screen bg-dark'>
       <Navbar collapseOnSelect expand="lg" bg="#383737" variant="dark">
         <Container>
           <Navbar.Brand href="App.js">Jhonatan Silvério</Navbar.Brand>

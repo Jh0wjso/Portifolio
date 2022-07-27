@@ -5,7 +5,6 @@
     justify-content: center;
     height: 10%;
     min-height: fit-content;
-    background-color: rgba(56, 55, 55, 0.849);
     padding: 2%;
 }
 
@@ -151,14 +150,6 @@
     }
 }
 
-@media screen and (max-width: 910px){
-    .profile-picture{
-        height: 320px;
-        width: 320px;
-        margin: 0 0 0 4px;
-    }
-}
-
 @media screen and (max-width: 810px){
     .profile-picture{
         margin: 0 !important;
@@ -187,13 +178,58 @@
 
 @media screen and (max-width: 300px){
 
-    .profile-picture{
-        margin: 0 !important;
-        width: 250px;
-        height: 250px;
+    .profile-parent{
+        width: 100%;
     }
+
+    .profile-details-role{
+        display: none;
+    }
+
+    .profile-picture{
+        width: 50%;
+    }
+
+    .profile-picture-background{
+        width: 70%;
+        height: 70%;
+    }
+
+    .profile-picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none;
+    }
+
     .profile-parent{
         flex-direction: column-reverse;
         margin: 30px 0 0 0;
+    }
+
+    .profile-options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primary-btn{
+        margin: 0px;
+    }
+
+    .profile-options .highlighted-btn{
+        margin: 0px;
+    }
+    
+    .profile-options .highlighted-btn:hover{
+        margin: 0px;
+        background-color: aliceblue;
+        color: black;
+    }
+    
+    .profile-options .primary-btn:hover{
+        margin: 0px;
+        background-color: aliceblue;
+        color: black;
     }
 }

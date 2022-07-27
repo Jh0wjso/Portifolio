@@ -80,8 +80,8 @@ export default function Profile() {
                         </span>
                     </span>
                 </div>
-                <div className="profile-options">
-                    <button className="btn primary-btn">
+                <div className="profile-options container">
+                    <button className="btn primary-btn mb-1">
                         {""}
                         Me Contrate{" "}
                     </button>
