@@ -19,6 +19,10 @@
     font-family: "Poppins SemiBold";
 }
 
+.nav-content{
+    background-color: #da1d1da2;
+}
+
 .profile-details-role{
     display: flex;
     flex-direction: column;
