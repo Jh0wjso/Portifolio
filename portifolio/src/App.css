@@ -22,8 +22,18 @@
 
 .MainContent{
   background-image: linear-gradient(rgba(223, 76, 76, 0.103),rgba(204, 84, 84, 0.055)100%),url("assets/Home/bg.jpg");
+  width: auto;
 }
 
 header{
   background-color: #1f1e1e7c;
+}
+
+@media screen and (max-width: 300px){
+
+  .MainContent{
+      background-image: url();
+      padding: 2%;
+  }
+
 }

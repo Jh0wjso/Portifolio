@@ -20,7 +20,8 @@
     background: url("../../assets/Home/profilephoto.jpg");
     background-size: cover;
     margin-right: 5%;
-    border-radius: 50%;
+    border-radius: 40%;
+    background-position: left;
 }
 
 .picture-background:hover{
@@ -120,6 +121,22 @@
     }
 }
 
+@media screen and (max-width: 500px){
+
+    .picture-background{
+        display: none;
+    }
+    .aboutMeText{
+        text-align: justify;
+        font-size: medium;
+    }
+
+    .aboutMeContent{
+        padding: 5%;
+    }
+    
+}
+
 @media screen and (max-width: 300px){
 
     .picture-background{
@@ -128,10 +145,6 @@
     .aboutMeText{
         text-align: justify;
         font-size: smaller;
-    }
-
-    .aboutMeContent{
-        padding: 5%;
     }
     
 }
