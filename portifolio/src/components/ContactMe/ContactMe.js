@@ -1,13 +1,17 @@
 import "./ContactMe.css"
+import React, { Component } from 'react';
+
 
 export default function ContactMe(){
+
+
     return(
         <div class="contact-content rounded container">
           
         <section class='p-3'>
           <h2 class="text-center h1 py-5">Mande uma mensagem</h2>
 
-          <p class="text-center mb-5">Para me contar é simples escreva sua mensagem e aperte em enviar.</p>
+          <p class="text-center mb-5">Para me contatar é simples escreva sua mensagem e aperte em enviar.</p>
       
             <div class="row">
 
@@ -62,7 +66,7 @@ export default function ContactMe(){
                 <div class="col-md-4 col-xl-3 text-center">
                     <ul class="list-unstyled">
                     <li>
-                        <i class="fas fa-map-marker-alt fa-2x blue-text"></i>
+                        <i class="fa fa-home fa-2x mt-4 blue-text"></i>
                         <p>Bandeirantes-PR, Brazil</p>
                     </li>
 
@@ -73,7 +77,7 @@ export default function ContactMe(){
 
                     <li>
                         <i class="fa fa-envelope fa-2x mt-4 blue-text"></i>
-                        <p>jhonatansilverio1258@gmail.com</p>
+                        <p className="text-center my-email">jhonatansilverio1258@gmail.com</p>
                     </li>
                     </ul>
                 </div>

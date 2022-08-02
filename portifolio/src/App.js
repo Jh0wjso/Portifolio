@@ -20,22 +20,17 @@ function App() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#profile">Sobre mim</Nav.Link>
-                <Nav.Link href="#pricing">Contato</Nav.Link>
-              </Nav>
-              <Nav>
-                <Nav.Link href="#deets">Curriculo</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                  Projetos
-                </Nav.Link>
+                <Nav.Link href="#aboutme">Sobre mim</Nav.Link>
+                <Nav.Link href="#contact">Contato</Nav.Link>
+                <Nav.Link href="#resume">Curriculo</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
       </div>
-      <div>
-        <div className='w-100'> <Profile/> </div>
-        <div id='profile' className='w-100'> <AboutMe/> </div>
+      <div className='d-flex flex-column justify-content-center'>
+        <div className='w-100 mb-3'> <Profile/> </div>
+        <div id='aboutme' className='w-100'> <AboutMe/> </div>
         <div id='contact' className='w-100 text-center mt-5'> <ContactMe/> </div>
         <div id='footer' className='w-100'> <Footer/></div>
       </div>
