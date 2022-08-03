@@ -44,7 +44,7 @@ header{
 @media screen and (max-width: 300px){
 
   .MainContent{
-      background-image: url();
+      background-image: url('./');
       padding: 2%;
   }
 

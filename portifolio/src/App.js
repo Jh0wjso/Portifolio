@@ -6,8 +6,9 @@ import Footer from './components/Footer/Footer';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Projects from './components/Projects/Projects';
+//import Projects from './components/Projects/Projects';
 import ContactMe from './components/ContactMe/ContactMe';
+import Technologies from './components/Technologies/Technologies';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Nav className="me-auto">
                 <Nav.Link href="#aboutme">Sobre mim</Nav.Link>
                 <Nav.Link href="#contact">Contato</Nav.Link>
+                <Nav.Link href="#technologies">Tecnologias</Nav.Link>
                 <Nav.Link href="#resume">Curriculo</Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -31,7 +33,8 @@ function App() {
       <div className='d-flex flex-column justify-content-center'>
         <div className='w-100 mb-3'> <Profile/> </div>
         <div id='aboutme' className='w-100'> <AboutMe/> </div>
-        <div id='contact' className='w-100 text-center mt-5'> <ContactMe/> </div>
+        <div id='technologies'> <Technologies/> </div>
+        <div id='contact' className='w-100 text-center '> <ContactMe/> </div>
         <div id='footer' className='w-100'> <Footer/></div>
       </div>
     </div>

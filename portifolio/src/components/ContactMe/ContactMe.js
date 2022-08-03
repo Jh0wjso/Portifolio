@@ -9,7 +9,7 @@ export default function ContactMe(){
         <div class="contact-content rounded container">
           
         <section class='p-3'>
-          <h2 class="text-center h1 py-5">Mande uma mensagem</h2>
+          <h2 class="text-center font-weight-bold h1 py-5">Mande uma mensagem</h2>
 
           <p class="text-center mb-5">Para me contatar é simples escreva sua mensagem e aperte em enviar.</p>
       

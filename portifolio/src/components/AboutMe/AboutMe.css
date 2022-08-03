@@ -43,7 +43,7 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 2%;
-    background-color: rgba(54, 51, 51, 0.651);
+    background-image: linear-gradient(rgba(26, 24, 26, 0.555), rgba(165, 30, 30, 0.555));;
 }
 
 .highlight-text{
