@@ -4,7 +4,7 @@ import React from 'react';
 export default function Technologies(){
     return(
         <div className='content-background container d-flex flex-column'>
-            <h1 className='text-center font-weight-bold'>Tecnologias que eu uso</h1>
+            <h1 className='font-weight-bold highlight-text text-center'>Competências.</h1>
             <div className='content'>
                 <div className='item-tec text-center d-flex flex-column justify-content-center align-items-center'>
                     <svg className='p-2 mb-1 mt-1' xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">

@@ -1,7 +1,6 @@
 import React from "react";
 import Typical from 'react-typical';
 import './Profile.css';
-import NavBar_Component from "../NavBar/NavBar_Component";
 
 
 

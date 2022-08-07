@@ -6,9 +6,9 @@ import Footer from './components/Footer/Footer';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-//import Projects from './components/Projects/Projects';
 import ContactMe from './components/ContactMe/ContactMe';
 import Technologies from './components/Technologies/Technologies';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
@@ -34,6 +34,7 @@ function App() {
         <div className='w-100 mb-3'> <Profile/> </div>
         <div id='aboutme' className='w-100'> <AboutMe/> </div>
         <div id='technologies'> <Technologies/> </div>
+        <div id='projects' className='w-100 text-center'> <Projects/> </div>
         <div id='contact' className='w-100 text-center '> <ContactMe/> </div>
         <div id='footer' className='w-100'> <Footer/></div>
       </div>
