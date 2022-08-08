@@ -1,8 +1,23 @@
-import "./ContactMe.css"
-
+import "./ContactMe.css";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function ContactMe(){
 
+    const form = useRef();
+
+    function sendEmail(e){
+        e.preventDefault();
+
+        emailjs.sendForm('gmail', 'portifolio_template', form.current, 'dFAOjee8Q73lUpis4')
+        .then(() => {
+            alert('Mensagem Enviada!');
+        }, (error) => {
+            alert('Por problemas técnicos não conseguimos enviar sua mensagem!');
+        });
+
+        e.target.reset();
+    }
 
     return(
         <div class="contact-content rounded container">
@@ -15,20 +30,20 @@ export default function ContactMe(){
             <div class="row">
 
                 <div class="col-md-8 col-xl-9">
-                    <form>
+                    <form ref={form} onSubmit={sendEmail}>
 
                     <div class="row">
 
                         <div class="col-md-6">
                         <div class="md-form">
-                            <input type="text" id="contact-name" class="form-control"/>
+                            <input placeholder="Ex. Jhonatan" name = "name" type="text" id="contact-name" class="form-control"/>
                             <label for="contact-name" class="">Seu Nome</label>
                         </div>
                         </div>
 
                         <div class="col-md-6">
                         <div class="md-form">
-                            <input type="text" id="contact-email" class="form-control"/>
+                            <input name = "email" placeholder="Ex. jhonatansilverio1258@gmail.com" type="text" id="contact-email"  class="form-control"/>
                             <label for="contact-email" class="">Seu email</label>
                         </div>
                         </div>    
@@ -37,7 +52,7 @@ export default function ContactMe(){
                     <div class="row">
                         <div class="col-md-12">
                         <div class="md-form">
-                            <input type="text" id="contact-Subject" class="form-control"/>
+                            <input name = "subject" placeholder="Ex. Trabalho" type="text" id="contact-Subject" class="form-control"/>
                             <label for="contact-Subject" class="">Assunto</label>
                         </div>
                         </div>
@@ -48,18 +63,15 @@ export default function ContactMe(){
                         <div class="col-md-12">
 
                         <div class="md-form">
-                            <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                            <textarea name = "message" placeholder="Aqui você deixa sua mensagem." type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
                             <label for="contact-message">Sua Mensagem</label>
                         </div>
 
                         </div>
                     </div>
-
+                    <input class="btn-send btn text-white" type="submit" value="Enviar" />  
                     </form>
-
-                    <div class="text-center text-md-left">
-                    <a class="btn-send btn">Enviar</a>
-                    </div>
+                    
                 </div>
 
                 <div class="col-md-4 col-xl-3 text-center">
