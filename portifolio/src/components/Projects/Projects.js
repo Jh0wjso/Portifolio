@@ -2,6 +2,10 @@ import React from "react";
 import "./Projects.css";
 import watchball from '../../assets/Home/watchball.png';
 import portifolio from "../../assets/Home/portifolio.png";
+import styudyplatform from "../../assets/Home/styudyplatform.png";
+import BMI_Calculator from "../../assets/Home/BMI_Calculator.jpeg";
+import CoinCotation from "../../assets/Home/CoinCotation.jpeg";
+import Stylos from "../../assets/Home/Stylos.png";
 
 export default function Projects(){
     return(
@@ -19,7 +23,7 @@ export default function Projects(){
                 <div className="card-project">
                     <strong className="logo">JSO</strong>
                     <h2 className="title">CoinCotation</h2>
-                    <img src={watchball} alt="coinCotation-logo" className="project"/>
+                    <img src={CoinCotation} alt="coinCotation-logo" className="project"/>
                     <div className="button-right">
                         <a href="https://github.com/Jh0wjso/CoinCotation" target={"_blank"}>Repositório</a>
                     </div>
@@ -27,7 +31,7 @@ export default function Projects(){
                 <div className="card-project">
                     <strong className="logo">JSO</strong>
                     <h2 className="title">Stylos</h2>
-                    <img src={watchball} alt="Stylos-logo" className="project"/>
+                    <img src={Stylos} alt="Stylos-logo" className="project"/>
                     <div className="button-right">
                         <a href="index.html">EM BREVE</a>
                     </div>
@@ -37,7 +41,7 @@ export default function Projects(){
                 <div className="card-project">
                     <strong className="logo">JSO</strong>
                     <h2 className="title">Study</h2>
-                    <img src={watchball} alt="study-platform-logo" className="project"/>
+                    <img src={styudyplatform} alt="study-platform-logo" className="project"/>
                     <div className="button-right">
                         <a href="https://github.com/Jh0wjso/Ignite_Lab" target={"_blank"}>Repositório</a>
                     </div>
@@ -45,7 +49,7 @@ export default function Projects(){
                 <div className="card-project">
                     <strong className="logo">JSO</strong>
                     <h2 className="title">BMI-Calc</h2>
-                    <img src={watchball} alt="BMI-Calculator-logo" className="project"/>
+                    <img src={BMI_Calculator} alt="BMI-Calculator-logo" className="project"/>
                     <div className="button-right">
                         <a href="https://github.com/Jh0wjso/JSO_HEALTH" target={"_blank"}>Repositório</a>
                     </div>
