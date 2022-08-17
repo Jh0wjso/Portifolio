@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Technologies(){
     return(
-        <div className='content-background container d-flex flex-column'>
+        <section className='content-background container d-flex flex-column'>
             <h1 className='font-weight-bold highlight-text text-center'>Competências.</h1>
             <div className='content'>
                 <div className='item-tec text-center d-flex flex-column justify-content-center align-items-center'>
@@ -69,6 +69,6 @@ export default function Technologies(){
                     <small>Me especializando em MySql, PostgressSQL, MongoDB ...</small>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

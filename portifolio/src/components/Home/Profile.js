@@ -6,7 +6,7 @@ import './Profile.css';
 
 export default function Profile() {
   return (
-    <div>
+    <section>
         <div className="profile-container">
             <div className="profile-parent">
                 <div className="profile-details">
@@ -97,6 +97,6 @@ export default function Profile() {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   );
 }

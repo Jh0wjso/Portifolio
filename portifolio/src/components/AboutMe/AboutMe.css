@@ -17,7 +17,7 @@
 .picture-background{
     height: 400px;
     width: 800px;
-    background: url("../../assets/Home/profilephoto.jpg");
+    background: url("../../assets/Home/profilepicture.jpg");
     background-size: cover;
     margin-right: 5%;
     border-radius: 25%;

@@ -9,7 +9,7 @@ import Stylos from "../../assets/Home/Stylos.png";
 
 export default function Projects(){
     return(
-        <div className="mainContent container d-flex justify-content-center">
+        <section className="mainContent container d-flex justify-content-center">
             <h1>Projetos</h1>
             <div className="projects d-flex justify-content-center">
                 <div className="card-project">
@@ -63,6 +63,6 @@ export default function Projects(){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
