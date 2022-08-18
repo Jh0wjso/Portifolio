@@ -2,8 +2,6 @@ import React from "react";
 import Typical from 'react-typical';
 import './Profile.css';
 
-
-
 export default function Profile() {
   return (
     <section>
@@ -81,10 +79,12 @@ export default function Profile() {
                         </span>
                     </div>
                     <div className="profile-options container">
-                        <button className="btn primary-btn mb-1">
-                            {""}
-                            Me Contrate{" "}
-                        </button>
+                        <a href="https://www.linkedin.com/in/jhonatansilverio" target={"_blank"}>
+                            <button className="btn primary-btn mb-1">
+                                {""}
+                                Me Contrate{" "}
+                            </button>
+                        </a>
 
                         <a href="Curriculo.pdf" download='Jhonatan Silverio.pdf'>
                             <button className="btn highlighted-btn">Baixar Currículo</button>
