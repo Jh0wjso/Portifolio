@@ -73,7 +73,7 @@ export default function Profile() {
                                     ]}
                                 />
                             </h1>
-                            <span className="profile-role-tagline">
+                            <span className="profile-role-tagline font-weight-bold">
                                 Habilidades em front e back end.
                             </span>
                         </span>
