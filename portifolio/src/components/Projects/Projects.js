@@ -1,9 +1,9 @@
 import React from "react";
 import "./Projects.css";
 import watchball from '../../assets/Home/watchball.png';
-import portifolio from "../../assets/Home/portifolio.png";
+import Agrolugue from "../../assets/Home/agrolugue.png";
 import styudyplatform from "../../assets/Home/styudyplatform.png";
-import BMI_Calculator from "../../assets/Home/BMI_Calculator.jpeg";
+import BMI_Calculator from "../../assets/Home/BMI-Calculator.png";
 import CoinCotation from "../../assets/Home/CoinCotation.jpeg";
 import Stylos from "../../assets/Home/Stylos.png";
 
@@ -13,7 +13,7 @@ export default function Projects(){
             <h1>Projetos</h1>
             <div className="projects d-flex justify-content-center">
                 <div className="card-project">
-                    <strong className="logo">JSO</strong>
+                    <strong className="logo">Finalizado</strong>
                     <h2 className="text-center">WatchBall</h2>
                     <img src={watchball} alt="watchball-logo" className="project"/>
                     <div className="button-right">
@@ -21,7 +21,7 @@ export default function Projects(){
                     </div>
                 </div>
                 <div className="card-project">
-                    <strong className="logo">JSO</strong>
+                    <strong className="logo">Em Produçao</strong>
                     <h2 className="title">CoinCotation</h2>
                     <img src={CoinCotation} alt="coinCotation-logo" className="project"/>
                     <div className="button-right">
@@ -29,7 +29,7 @@ export default function Projects(){
                     </div>
                 </div>
                 <div className="card-project">
-                    <strong className="logo">JSO</strong>
+                    <strong className="logo">Em Produçao</strong>
                     <h2 className="title">Stylos</h2>
                     <img src={Stylos} alt="Stylos-logo" className="project"/>
                     <div className="button-right">
@@ -39,7 +39,7 @@ export default function Projects(){
             </div>
             <div className="projects d-flex justify-content-center">
                 <div className="card-project">
-                    <strong className="logo">JSO</strong>
+                    <strong className="logo">Ignite Lab</strong>
                     <h2 className="title">Study</h2>
                     <img src={styudyplatform} alt="study-platform-logo" className="project"/>
                     <div className="button-right">
@@ -47,7 +47,7 @@ export default function Projects(){
                     </div>
                 </div>
                 <div className="card-project">
-                    <strong className="logo">JSO</strong>
+                    <strong className="logo">Finalizado</strong>
                     <h2 className="title">BMI-Calc</h2>
                     <img src={BMI_Calculator} alt="BMI-Calculator-logo" className="project"/>
                     <div className="button-right">
@@ -55,11 +55,11 @@ export default function Projects(){
                     </div>
                 </div>
                 <div className="card-project">
-                    <strong className="logo">JSO</strong>
-                    <h2 className="title">Portifolio</h2>
-                    <img src={portifolio} alt="portifolio-logo" className="project"/>
+                    <strong className="logo">Em Breve</strong>
+                    <h2 className="title">Agrolugue</h2>
+                    <img src={Agrolugue} alt="Agrolugue-logo" className="project"/>
                     <div className="button-right">
-                        <a href="https://github.com/Jh0wjso/Portifolio" target={"_blank"}>Repositório</a>
+                        <a href="index.html">Em Breve</a>
                     </div>
                 </div>
             </div>
