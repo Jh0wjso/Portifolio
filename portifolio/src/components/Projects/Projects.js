@@ -7,10 +7,27 @@ import BMI_Calculator from "../../assets/Home/BMI-Calculator.png";
 import CoinCotation from "../../assets/Home/CoinCotation.jpeg";
 import Stylos from "../../assets/Home/Stylos.png";
 
+import Alert from "react-bootstrap/Alert";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
 export default function Projects(){
+    
+    function alerta(){
+        const MySwal = withReactContent(Swal);
+        return(
+            MySwal.fire({
+                title: <p>Esse projeto ainda esta em produçao.</p>,
+                onOpen: () => {
+                  setTimeout(() => MySwal.clickConfirm(), 2500);
+                }
+              })
+        );
+    }
+
     return(
         <section className="mainContent container d-flex justify-content-center">
-            <h1>Projetos</h1>
+            <h1 className="font-weight-bold highlight-text text-center">Projetos</h1>
             <div className="projects d-flex justify-content-center">
                 <div className="card-project">
                     <strong className="logo">Finalizado</strong>
@@ -25,7 +42,7 @@ export default function Projects(){
                     <h2 className="title">CoinCotation</h2>
                     <img src={CoinCotation} alt="coinCotation-logo" className="project"/>
                     <div className="button-right">
-                        <a href="https://github.com/Jh0wjso/CoinCotation" target={"_blank"}>Repositório</a>
+                        <a href="https://github.com/Jh0wjso/CoinCotation-V2" target={"_blank"}>Repositório</a>
                     </div>
                 </div>
                 <div className="card-project">
@@ -33,7 +50,7 @@ export default function Projects(){
                     <h2 className="title">Stylos</h2>
                     <img src={Stylos} alt="Stylos-logo" className="project"/>
                     <div className="button-right">
-                        <a href="index.html">EM BREVE</a>
+                        <a onClick={() => {alerta()}}>EM BREVE</a>
                     </div>
                 </div>
             </div>
@@ -59,7 +76,7 @@ export default function Projects(){
                     <h2 className="title">Agrolugue</h2>
                     <img src={Agrolugue} alt="Agrolugue-logo" className="project"/>
                     <div className="button-right">
-                        <a href="index.html">Em Breve</a>
+                        <a onClick={() => {alerta()}}>Em Breve</a>
                     </div>
                 </div>
             </div>
