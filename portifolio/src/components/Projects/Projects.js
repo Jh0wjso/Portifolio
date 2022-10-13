@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 import watchball from '../../assets/Home/watchball.png';
 import Agrolugue from "../../assets/Home/agrolugue.png";
-import styudyplatform from "../../assets/Home/styudyplatform.png";
+import styudyplatform from "../../assets/Home/studyplatform.png";
 import BMI_Calculator from "../../assets/Home/BMI-Calculator.png";
 import CoinCotation from "../../assets/Home/CoinCotation.jpeg";
 import Stylos from "../../assets/Home/Stylos.png";
@@ -57,7 +57,7 @@ export default function Projects(){
             <div className="projects d-flex justify-content-center">
                 <div className="card-project">
                     <strong className="logo">Ignite Lab</strong>
-                    <h2 className="title">Study</h2>
+                    <h2 className="title">Study Platform</h2>
                     <img src={styudyplatform} alt="study-platform-logo" className="project"/>
                     <div className="button-right">
                         <a href="https://github.com/Jh0wjso/Ignite_Lab" target={"_blank"}>Repositório</a>
