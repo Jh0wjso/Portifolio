@@ -1,0 +1,114 @@
+.mainContent{
+    background-image: linear-gradient(rgba(26, 24, 26, 0.555),rgba(165, 30, 30, 0.555));
+    font-weight: bold;
+    border: none;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects{
+    flex-direction: row;
+}
+
+.card-project{
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 16px;
+    overflow: hidden;
+    transform: translate(0);
+    margin: 16px;
+    transition: 0.25s;
+}
+
+.card-project:hover{
+    transform: scale(1.03);
+}
+
+.card-project::before{
+    content: "";
+    position: absolute;
+    top: -64px;
+    left: -64px;
+    width: 150%;
+    height: 76%;
+    transform: rotate(-12deg);
+    z-index: -1;
+}
+
+.card-project::before{
+    background-image: linear-gradient(rgb(165, 30, 30), #eb1b3d);
+}
+
+.card-project .logo{
+    font-size: 25px;
+}
+
+.card-project h2{
+    font-size: 180%;
+    text-transform: uppercase;
+    line-height: 64px;
+    color: #fff;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.project{
+    height: 180px;
+    width: 300px;
+    object-fit: contain;
+    margin-top: 40px;
+    margin-left: -32px;
+    border-radius: 20%;
+}
+
+.card-project .button-right{
+    text-align: right;
+    margin-top: 64px;
+}
+
+.card-project .button-right a{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+}
+
+.card-project .button-right a{
+    background-image: linear-gradient(170deg, rgb(165, 30, 30), #eb1b3d);
+}
+
+@media screen and (max-width: 800px){
+
+    .projects{
+        flex-direction: column;
+    }
+    
+    .project{
+        width: 350px;
+        height: 250px;
+    }
+
+    .card-project h2{
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 300px){
+
+    .projects{
+        flex-direction: column;
+    }
+    
+    .project{
+        width: 200px;
+        height: 130px;
+    }
+
+    .card-project h2{
+        font-size: 150%;
+    }
+}

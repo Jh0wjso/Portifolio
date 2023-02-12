@@ -1,0 +1,247 @@
+.profile-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    padding: 2%;
+}
+
+.profile-parent{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+}
+
+.profile-details-name{
+    font-size: "24px";
+    font-family: "Poppins SemiBold";
+}
+
+.nav-content{
+    background-color: #da1d1da2;
+}
+
+.profile-details-role{
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+    background-image: linear-gradient(#ff00007e,#cc545437);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.profile-details-role h1{
+    font-size: 40px;
+    font-family: monospace;
+
+}
+
+.primary-text{
+    color: var(--white);
+}
+
+.highlighted-text{
+    color: var(--red);
+}
+
+.profile-role-tag-line{
+    font-size: 19px;
+    margin: 5px 0 0 0;
+    font-family: "Poppins Light";
+}
+
+.profile-options .highlighted-btn{
+    margin: 0 0 0 28px;
+}
+
+.profile-options .highlighted-btn:hover{
+    margin: 0 28px 0 0;
+    background-color: aliceblue;
+    color: black;
+}
+
+.profile-options .primary-btn:hover{
+    margin: 0 0 0 28px;
+    background-color: aliceblue;
+    color: black;
+}
+
+.profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+}
+
+.profile-picture-background{
+    height: 92%;
+    width: 92%;
+    background-image: url("../../assets/Home/profilephoto.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    background-position: left;
+}
+
+.profile-picture-background:hover{
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+
+.colz .colz-icon{
+    padding: 8px;
+    padding-left: 0px;
+    width: auto;
+}
+
+.colz .colz-icon i{
+    transform: scale(1.5);
+}
+
+.colz .colz-icon svg{
+    transform: scale(1.5);
+}
+
+.colz .colz-icon i:hover{
+    transform: scale(3.5);
+}
+
+.colz .colz-icon svg:hover{
+    transform: scale(3.5);
+}
+
+
+
+@media screen and (max-width: 1110px){
+    .profile-picture{
+        margin: 0 0px 0 80px;
+    }
+
+    .profile-details-name{
+        font-size: 20px;
+    }
+
+    .profile-details-role .primary-text{
+        font-size: 12px;
+    }
+
+    .profile-options .btn{
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .profile-picture{
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+
+    .profile-details-name{
+        font-size: 20px;
+    }
+
+    .profile-details-role .primary-text{
+        font-size: 12px;
+    }
+
+    .profile-options .btn{
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .profile-picture{
+        margin: 0 !important;
+    }
+    .profile-parent{
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+    .profile-options{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profile-details{
+        margin: 25px 0 0;
+    }
+
+    .profile-options .highlighted-btn{
+        margin: 0 !important;
+    }
+
+    .profile-options .profile-details-role{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 300px){
+
+    .profile-parent{
+        width: 100%;
+    }
+
+    .profile-details-role{
+        display: none;
+    }
+
+    .profile-picture{
+        width: 50%;
+    }
+
+    .profile-picture-background{
+        width: 70%;
+        height: 70%;
+    }
+
+    .profile-picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none;
+    }
+
+    .profile-parent{
+        flex-direction: column-reverse;
+        margin: 30px 0 0 0;
+    }
+
+    .profile-options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primary-btn{
+        margin: 0px;
+    }
+
+    .profile-options .highlighted-btn{
+        margin: 0px;
+    }
+    
+    .profile-options .highlighted-btn:hover{
+        margin: 0px;
+        background-color: aliceblue;
+        color: black;
+    }
+    
+    .profile-options .primary-btn:hover{
+        margin: 0px;
+        background-color: aliceblue;
+        color: black;
+    }
+}
