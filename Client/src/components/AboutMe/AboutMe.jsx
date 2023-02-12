@@ -12,9 +12,9 @@ export default function AboutMe() {
 
         <div className='whoAmI'>
           <strong className='highlight-text text-center'>Sobre mim</strong>
-          <p className='aboutMeText'>Atualmente Cursando Ciência da Computação na Universidade Estadual do Norte do Paraná(UENP) no câmpus Luiz Meneghel.
+          <p className='aboutMeText'>Atualmente Cursando Ciência da Computação na Universidade Estadual do Norte do Paraná(UENP) no campus Luiz Meneghel.
             Estou na busca de me tornar um dev de alto nível, no momento estou estudando ReactJs, React Native, NodeJs, JavaScript, MongoDb,
-            Python, Java, Postgress, entre outras tecnologias.
+            Python, Java, PostgresSQL, entre outras tecnologias.
           </p>
         </div>
       </div>
