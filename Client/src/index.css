@@ -102,11 +102,6 @@ body ::-webkit-scrollbar-thumb {
   background-color: #8B0000;
   margin-right: 20px;
 }
-/* @media only screen and (max-width: 414px) {
-  .primary-btn {
-    font-size: 13px;
-  }
-} */
 
 .primary-btn:hover {
   color: aliceblue;

@@ -4,11 +4,11 @@
   --sea-green: #0ABEAD;
   --sea-green-dark: #0CBFAE;
   --sea-green-extra-dark: #09BEAD;
-  --sea-green-shadow: rgba(11, 190, 173,0.4);
-  --header-hamburger-background : rgba(11, 190, 173,0.8);
+  --sea-green-shadow: #0bbead66;
+  --header-hamburger-background : #0bbeadcc;
   --orange: #F57F17;
   --dark-red: #8b1b0c;
-  --orange-shadow: rgba(245, 127, 23,0.2);
+  --orange-shadow: #f57f1733;
   --white: #ffffff;
   --black: #333333;
   --disabled-btn: #09bead7a;
@@ -18,6 +18,8 @@
   --toast-success: #0CBFAE;
   --loader-color: #0CBFAE;
   --red: #da1d1dfa;
+  --transparent-dark: #1a181a8e;
+  --transparent-red: #a51e1e8e;
 }
 
 .MainContent{
@@ -33,13 +35,13 @@ header{
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: rgba(233, 47, 47, 0.76);
-  background: rgba(26, 26, 25, 0.623);
+  color: #e92f2fc2;
+  background: #1a1a199f;
 }
 
 ::selection {
-  color: rgba(233, 47, 47, 0.76);
-  background: rgba(26, 26, 25, 0.623);
+  color: #e92f2fc2;
+  background: #1a1a199f;
 }
 
 @media screen and (max-width: 280px){
