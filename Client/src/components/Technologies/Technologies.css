@@ -1,5 +1,5 @@
 .item-tec{
-    background-color: rgba(196, 25, 25, 0.664);
+    background-color: var(--transparent-red);
     width: 100%;
     margin: 2vh;
     border-radius: 15px;
@@ -7,7 +7,7 @@
 }
 
 .content-background{
-    background-image: linear-gradient(rgba(165, 30, 30, 0.555), rgba(26, 24, 26, 0.555));
+    background-image: linear-gradient(var(--transparent-red), var(--transparent-dark));
     font-weight: bold;
     border: none;
 }

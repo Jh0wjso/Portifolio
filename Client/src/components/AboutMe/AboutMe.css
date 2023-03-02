@@ -3,7 +3,7 @@
     height: 100%;
     margin-top: 1vh;
     display: flex;
-    color: #fff;
+    color: var(--white);
 }
 
 .my-picture{
@@ -43,7 +43,7 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 2%;
-    background-image: linear-gradient(rgba(26, 24, 26, 0.555), rgba(165, 30, 30, 0.555));;
+    background-image: linear-gradient(var(--transparent-dark), var(--transparent-red));
 }
 
 .highlight-text{

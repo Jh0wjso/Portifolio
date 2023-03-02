@@ -1,5 +1,5 @@
 .mainContent{
-    background-image: linear-gradient(rgba(26, 24, 26, 0.555),rgba(165, 30, 30, 0.555));
+    background-image: linear-gradient(rgba(26, 24, 26, 0.555),#a51e1e8e);
     font-weight: bold;
     border: none;
 
@@ -37,7 +37,7 @@
 }
 
 .card-project::before{
-    background-image: linear-gradient(rgb(165, 30, 30), #eb1b3d);
+    background-image: linear-gradient(#3e0101, #eb1b3d);
 }
 
 .card-project .logo{
@@ -46,11 +46,12 @@
 
 .card-project h2{
     font-size: 180%;
-    text-transform: uppercase;
+    text-transform: capitalize;
     line-height: 64px;
     color: #fff;
     margin: 0;
     margin-top: 24px;
+    font-weight: bold;
 }
 
 .project{
@@ -78,7 +79,7 @@
 }
 
 .card-project .button-right a{
-    background-image: linear-gradient(170deg, rgb(165, 30, 30), #eb1b3d);
+    background-image: linear-gradient(170deg, #3e0101, #eb1b3d);
 }
 
 @media screen and (max-width: 800px){
