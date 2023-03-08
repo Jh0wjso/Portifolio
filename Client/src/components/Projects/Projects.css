@@ -1,5 +1,5 @@
 .mainContent{
-    background-image: linear-gradient(rgba(26, 24, 26, 0.555),#a51e1e8e);
+    background-image: linear-gradient(var(--transparent-dark),var(--transparent-red));
     font-weight: bold;
     border: none;
 
