@@ -1,5 +1,4 @@
 import React from "react";
-import Typical from "react-typical";
 import "./Profile.css";
 
 export default function Profile() {
@@ -54,18 +53,7 @@ export default function Profile() {
               <span className="primary-text">
                 {" "}
                 <h1>
-                  {" "}
-                  <Typical
-                    loop={Infinity}
-                    steps={[
-                      "Um Dev em Ascensão",
-                      2000,
-                      "Cientista da Computação",
-                      2000,
-                      "Cross Platform Dev",
-                      2000,
-                    ]}
-                  />
+                  {"Desenvolvedor Front-end"}
                 </h1>
                 <span className="profile-role-tagline font-weight-bold">
                   Habilidades em front e back end.
