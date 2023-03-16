@@ -8,23 +8,7 @@ import BMI_Calculator from "../../assets/Home/BMI-Calc.png";
 import CoinCotation from "../../assets/Home/CoinCotation.jpeg";
 import Stylos from "../../assets/Home/Stylos.png";
 
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
-
 export default function Projects(){
-    
-    function alerta(){
-        const MySwal = withReactContent(Swal);
-        return(
-            MySwal.fire({
-                title: <p>Esse projeto ainda esta em produçao.</p>,
-                onOpen: () => {
-                  setTimeout(() => MySwal.clickConfirm(), 2500);
-                }
-              })
-        );
-    }
-
     return(
         <section className="mainContent container d-flex justify-content-center">
             <h1 className="font-weight-bold highlight-text text-center">Projetos</h1>
@@ -60,7 +44,7 @@ export default function Projects(){
                     <h2 className="title">Wanna be Health</h2>
                     <img src={WbH} alt="study-platform-logo" className="project"/>
                     <div className="button-right">
-                    <a onClick={() => {alerta()}}>EM BREVE</a>
+                    <a onClick={() => {}}>EM BREVE</a>
                     </div>
                 </div>
                 <div className="card-project">
