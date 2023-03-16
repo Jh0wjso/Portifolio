@@ -9,13 +9,6 @@ export default function Profile() {
           <div className="profile-details">
             <div className="colz d-flex justify-content-center">
               <div className="colz-icon">
-                <a
-                  href="https://www.facebook.com/jhonatan.silverio.374"
-                  target={"_blank"}
-                >
-                  <i className="fa fa-facebook-square text-white mr-4" />
-                </a>
-
                 <a href="https://twitter.com/Jho_JSO" target={"_blank"}>
                   <i className="fa fa-twitter-square text-white mr-4" />
                 </a>
