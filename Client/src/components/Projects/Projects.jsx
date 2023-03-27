@@ -34,7 +34,7 @@ export default function Projects(){
                     <h2 className="title">Web Store</h2>
                     <img src={Stylos} alt="Stylos-logo" className="project"/>
                     <div className="button-right">
-                        <a href="https://stylos.vercel.app/" target={"_blank"}>Site</a>
+                        <a href="https://github.com/Jh0wjso/Web_Store" target={"_blank"}>Repositório</a>
                     </div>
                 </div>
             </div>
