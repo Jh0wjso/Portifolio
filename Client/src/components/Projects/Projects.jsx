@@ -20,7 +20,7 @@ export default function Projects() {
           <h2 className="text-center">WatchBall</h2>
           <img src={watchball} alt="watchball-logo" className="project" />
           <div className="button-right">
-            <a href="https://watchball.netlify.app/" target={"_blank"}>
+            <a href="https://watchball.vercel.app/" target={"_blank"}>
               Site
             </a>
           </div>
@@ -59,7 +59,7 @@ export default function Projects() {
       </div>
       <div className="projects d-flex justify-content-center">
         <div className="card-project">
-          <strong className="logo">WbH</strong>
+          <strong className="logo">Em Produção</strong>
           <h2 className="title">WannabeHealth</h2>
           <img src={WbH} alt="study-platform-logo" className="project" />
           <div className="button-right">
