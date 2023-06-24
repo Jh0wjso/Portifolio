@@ -9,6 +9,7 @@ import ContactMe from './components/ContactMe/ContactMe';
 import Technologies from './components/Technologies/Technologies';
 import Projects from './components/Projects/Projects';
 import Header from './components/Header/Header';
+import Experiences from './components/Experiences/Experiences';
  
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <div className='w-100 mb-3'> <Profile/> </div>
         <div id='aboutme' className='w-100'> <AboutMe/> </div>
         <div id='technologies'> <Technologies/> </div>
+        <div id='experiences'> <Experiences /> </div>
         <div id='projects' className='w-100 text-center'> <Projects/> </div>
         <div id='contact' className='w-100 text-center '> <ContactMe/> </div>
         <div id='footer' className='w-100'> <Footer/></div>

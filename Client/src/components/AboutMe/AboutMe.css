@@ -43,7 +43,7 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 2%;
-    background-image: linear-gradient(var(--transparent-dark), var(--transparent-red));
+    background-image: linear-gradient(var(--transparent-red), var(--transparent-dark));
 }
 
 .highlight-text{

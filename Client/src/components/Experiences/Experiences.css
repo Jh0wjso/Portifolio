@@ -6,8 +6,8 @@
     padding: 2vh;
 }
 
-.content-background{
-    background-image: linear-gradient(var(--transparent-dark), var(--transparent-red));
+.content-background2{
+    background-image: linear-gradient(var(--transparent-red), var(--transparent-dark));
     font-weight: bold;
     border: none;
 }
