@@ -14,7 +14,7 @@ export default function Header() {
               <Nav.Link href="#aboutme">Sobre mim</Nav.Link>
               <Nav.Link href="#contact">Contato</Nav.Link>
               <Nav.Link href="#technologies">Tecnologias</Nav.Link>
-              <Nav.Link href="#projects">Curriculo</Nav.Link>
+              <Nav.Link href="#projects">Projetos</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
