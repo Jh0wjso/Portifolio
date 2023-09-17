@@ -7,7 +7,7 @@
   --sea-green-shadow: #0bbead66;
   --header-hamburger-background : #0bbeadcc;
   --orange: #F57F17;
-  --dark-red: #8b1b0c;
+  --dark-red: #6a05ad;
   --orange-shadow: #f57f1733;
   --white: #ffffff;
   --black: #333333;
@@ -19,7 +19,7 @@
   --loader-color: #0CBFAE;
   --red: #da1d1dfa;
   --transparent-dark: #1a181a8e;
-  --transparent-red: #ad05058e;
+  --transparent-red: #6a05ad8e;
   --header-purple: #2b114d;
   --bg-purple: #1A0B2E;
   --card-purple: #693B93;
@@ -27,7 +27,7 @@
 
 .MainContent{
   flex: 1;
-  background-image: linear-gradient(#df4c4c1a,#cc54540e),url("assets/Home/bg.jpg");
+  background-image: linear-gradient(#6a05ad31,#cc54540e),url("assets/Home/bg.jpg");
   width: 100%;
   height: 100%;
   background-attachment: fixed;
