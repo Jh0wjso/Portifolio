@@ -38,12 +38,12 @@ header{
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: #e92f2fc2;
+  color: #c697f2c2;
   background: #1a1a199f;
 }
 
 ::selection {
-  color: #e92f2fc2;
+  color: #c697f2c2;
   background: #1a1a199f;
 }
 
