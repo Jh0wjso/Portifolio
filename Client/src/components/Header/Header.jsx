@@ -7,7 +7,7 @@ export default function Header() {
     <div className="d-flex justify-content-center w-screen container">
       <Navbar collapseOnSelect expand="lg" bg="#080808" variant="dark">
         <Container>
-          <Navbar.Brand href="App.js">Jhonatan Silvério</Navbar.Brand>
+          <Navbar.Brand href="/">Jhonatan Silvério</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
