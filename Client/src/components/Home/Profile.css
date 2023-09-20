@@ -27,7 +27,6 @@
     display: flex;
     flex-direction: column;
     margin: 14px 0 24px 0;
-    background-image: linear-gradient(var(--transparent-dark), var(--transparent-red));
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
