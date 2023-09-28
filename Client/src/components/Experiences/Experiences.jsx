@@ -23,13 +23,18 @@ export default function Experiences() {
           </svg>
           <strong style={{ fontSize: 25 }}>Estagiário AITEC</strong>
           <small>
-            O estagiário na AITEC da UENP foi responsável pela manutenção e
-            desenvolvimento do site da agência, usando Joomla. Ele lidou com um
-            grande volume de informações e demandas dos usuários. Também
-            realizou modelagem 3D de peças, cortes a laser e integração de
-            componentes tecnológicos. Essa experiência aprimorou suas
-            habilidades em tecnologia, trabalho em equipe e enfrentamento de
-            desafios, contribuindo para projetos de impacto na área.
+            Durante meu período como estagiário na AITEC da UENP, assumi a
+            responsabilidade pela manutenção e desenvolvimento do site da
+            agência, utilizando a plataforma Joomla. Durante essa experiência,
+            lidei com um grande volume de informações e atendi às diversas
+            demandas dos usuários. Além disso, tive a oportunidade de realizar
+            modelagem 3D de peças, executar cortes a laser e integrar
+            componentes tecnológicos. Essa vivência enriquecedora me permitiu
+            aprimorar minhas habilidades em tecnologia, fortalecer minha
+            capacidade de trabalho em equipe e desenvolver minha habilidade para
+            enfrentar desafios de maneira eficaz. Minhas contribuições
+            desempenharam um papel significativo em projetos impactantes na
+            área.
           </small>
         </div>
         <div className="item-tec text-center d-flex flex-column justify-content-center align-items-center">
@@ -46,13 +51,17 @@ export default function Experiences() {
           </svg>
           <strong style={{ fontSize: 25 }}>Estagiário CSG International</strong>
           <small>
-            O estagiário trabalha em uma empresa multinacional, desenvolvendo
-            soluções internas inovadoras usando várias tecnologias, como C#,
-            .NET, ASP.NET, PHP, ReactJS, TypeScript e NextJS. Ele está envolvido
-            em todas as etapas do ciclo de vida do software, colaborando com
-            desenvolvedores sêniores e arquitetos. Além disso, ele precisa ter
-            habilidades de comunicação em inglês, pois interage com pessoas de
-            diferentes países.
+            Eu trabalho em uma empresa multinacional, onde sou responsável pelo
+            desenvolvimento de soluções internas inovadoras, fazendo uso de uma
+            ampla gama de tecnologias, como C#, .NET, ASP.NET, PHP, ReactJS,
+            TypeScript e NextJS. Minha função me envolve em todas as etapas do
+            ciclo de vida do software, o que inclui colaboração constante com
+            desenvolvedores sêniores e arquitetos experientes. Além disso, a
+            comunicação em inglês é uma habilidade fundamental, uma vez que
+            interajo com colegas de diferentes países e culturas. Essa
+            experiência tem me permitido crescer profissionalmente, tanto em
+            termos de desenvolvimento técnico quanto de competências
+            interpessoais.
           </small>
         </div>
       </div>
