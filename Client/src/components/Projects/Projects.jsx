@@ -7,7 +7,7 @@ import WbH from "../../assets/Home/Logo2.png";
 import BMI_Calculator from "../../assets/Home/BMI-Calc.png";
 import CoinCotation from "../../assets/Home/CoinCotation.jpeg";
 import Stylos from "../../assets/Home/Stylos.png";
-import Ball from "../../assets/Home/ball.png";
+import Ball from "../../assets/Home/iohub.jpg";
 import OnMaps from "../../assets/Home/onmaps.png";
 
 export default function Projects() {
