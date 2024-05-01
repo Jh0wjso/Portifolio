@@ -1,5 +1,4 @@
 .mainContent{
-    background-image: linear-gradient(var(--transparent-dark),var(--transparent-red));
     font-weight: bold;
     border: none;
 
@@ -37,7 +36,7 @@
 }
 
 .card-project::before{
-    background-image: linear-gradient(#320252, #6a05ad);
+    background-image: linear-gradient(#0d4b04, #51b641);
 }
 
 .card-project .logo{
@@ -79,7 +78,7 @@
 }
 
 .card-project .button-right a{
-    background-image: linear-gradient(170deg, #320252, #6a05ad);
+    background-image: linear-gradient(170deg, #0d4b04, #24FF00);
 }
 
 @media screen and (max-width: 800px){
