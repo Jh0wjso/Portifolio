@@ -23,11 +23,13 @@
   --header-purple: #2b114d;
   --bg-purple: #1A0B2E;
   --card-purple: #693B93;
+  --green: #24FF00;
 }
 
 .MainContent{
   flex: 1;
-  background-image: linear-gradient(#6a05ad31,#cc54540e),url("assets/Home/bg.jpg");
+  /*Background image com essas cores #000000,#414040 em linear-gradient, da direita para a esquerda*/
+  background-image: linear-gradient(to right,#000000, #2c2c2c);
   width: 100%;
   height: 100%;
   background-attachment: fixed;
@@ -43,7 +45,7 @@ header{
 }
 
 ::selection {
-  color: #c697f2c2;
+  color: #24FF00c2;
   background: #1a1a199f;
 }
 
