@@ -7,7 +7,6 @@
 }
 
 .content-background{
-    background-image: linear-gradient(var(--transparent-dark), var(--transparent-red));
     font-weight: bold;
     border: none;
 }
