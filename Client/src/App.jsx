@@ -15,9 +15,9 @@ function App() {
   return (
     <div className="MainContent h-100">
       <Header />
-      <div className='d-flex flex-column justify-content-center'>
+      <div className='d-flex flex-column'>
         <div className='w-100 mb-3'> <Profile/> </div>
-        <div id='aboutme' className='w-100'> <AboutMe/> </div>
+        <div id='aboutme'> <AboutMe/> </div>
         <div id='technologies'> <Technologies/> </div>
         <div id='experiences'> <Experiences /> </div>
         <div id='projects' className='w-100 text-center'> <Projects/> </div>
