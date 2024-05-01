@@ -1,16 +1,15 @@
 .profile-container{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
     height: 10%;
     min-height: fit-content;
     padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .profile-parent{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: aliceblue;
 }
 
@@ -45,7 +44,11 @@
 }
 
 .highlighted-text{
-    color: var(--card-purple);
+    color: var(--green);
+}
+
+.mainNum{
+    font-size: 25px;
 }
 
 .profile-role-tag-line{
