@@ -1,12 +1,17 @@
 import React from "react";
 import "./Experiences.css";
+import { PiBracketsRoundBold } from "react-icons/pi";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
 
 export default function Experiences() {
   return (
-    <section className="content-background2 container d-flex flex-column">
-      <h1 className="font-weight-bold highlight-text text-center">
-        Experiências
-      </h1>
+    <section className="content-background2 d-flex flex-column">
+      <div className="d-flex">
+        <strong className="highlighted-text h3">companies</strong>
+        <strong className="h3">
+          <PiBracketsRoundBold />
+        </strong>
+      </div>
       <div className="content">
         <div className="item-tec text-center d-flex flex-column justify-content-center align-items-center">
           <svg
@@ -20,21 +25,25 @@ export default function Experiences() {
           >
             <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z M.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H.5ZM1 5V2h14v3H1Zm0 1h14v8H1V6Z" />
           </svg>
-          <strong style={{ fontSize: 25 }}>Estagiário AITEC</strong>
+          <strong style={{ fontSize: 25 }}>
+            Intern <br />
+            at AITEC
+          </strong>
           <small>
-            Durante meu período como estagiário na AITEC da UENP, assumi a
-            responsabilidade pela manutenção e desenvolvimento do site da
-            agência, utilizando a plataforma Joomla. Durante essa experiência,
-            lidei com um grande volume de informações e atendi às diversas
-            demandas dos usuários. Além disso, tive a oportunidade de realizar
-            modelagem 3D de peças, executar cortes a laser e integrar
-            componentes tecnológicos. Essa vivência enriquecedora me permitiu
-            aprimorar minhas habilidades em tecnologia, fortalecer minha
-            capacidade de trabalho em equipe e desenvolver minha habilidade para
-            enfrentar desafios de maneira eficaz. Minhas contribuições
-            desempenharam um papel significativo em projetos impactantes na
-            área.
+            During my internship at AITEC of UENP, I was responsible for
+            maintaining and developing the agency's website using the Joomla
+            platform. During this period, I managed a large volume of
+            information and attended to various user demands. Additionally, I
+            had the opportunity to perform 3D modeling of parts, execute laser
+            cuts, and integrate technological components.
           </small>
+          <a
+            href="http://aitec.uenp.edu.br/"
+            target={"_blank"}
+            className="button-experience"
+          >
+            Visit Web Site
+          </a>
         </div>
         <div className="item-tec text-center d-flex flex-column justify-content-center align-items-center">
           <svg
@@ -48,20 +57,44 @@ export default function Experiences() {
           >
             <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
           </svg>
-          <strong style={{ fontSize: 25 }}>Estagiário CSG International</strong>
+          <strong style={{ fontSize: 25 }}>
+            Software Engineer at CSG International
+          </strong>
           <small>
-            Eu trabalho em uma empresa multinacional, onde sou responsável pelo
-            desenvolvimento de soluções internas inovadoras, fazendo uso de uma
-            ampla gama de tecnologias, como C#, .NET, ASP.NET, PHP, ReactJS,
-            TypeScript e NextJS. Minha função me envolve em todas as etapas do
-            ciclo de vida do software, o que inclui colaboração constante com
-            desenvolvedores sêniores e arquitetos experientes. Além disso, a
-            comunicação em inglês é uma habilidade fundamental, uma vez que
-            interajo com colegas de diferentes países e culturas. Essa
-            experiência tem me permitido crescer profissionalmente, tanto em
-            termos de desenvolvimento técnico quanto de competências
-            interpessoais.
+            I worked at a multinational company, where I'm responsible for
+            developing innovative internal solutions, using a wide range of
+            technologies such as C#, .NET, ASP.NET, PHP, ReactJS, TypeScript,
+            and NextJS. My role involves me in all stages of the software
+            lifecycle, including constant collaboration with senior developers
+            and experienced architects.
           </small>
+          <a
+            href="https://www.csgi.com/"
+            target={"_blank"}
+            className="button-experience"
+          >
+            Visit Web Site
+          </a>
+        </div>
+        <div className="item-tec text-center d-flex flex-column justify-content-center align-items-center">
+          <HiOutlineDesktopComputer size={70} />
+          <strong style={{ fontSize: 25 }}>Freelancer</strong>
+          <small>
+            Since 2020, I've been operating as a freelance web developer,
+            crafting bespoke web applications for clients worldwide. With a
+            passion for coding and a keen eye for detail, I specialize in
+            creating tailored solutions that meet the unique needs of each
+            client. From e-commerce platforms to dynamic web portals, my goal is
+            to deliver high-quality, user-friendly applications that exceed
+            expectations.
+          </small>
+          <a
+            href="https://www.linkedin.com/in/jhonatansilverio/"
+            target={"_blank"}
+            className="button-experience"
+          >
+            Visit Web Site
+          </a>
         </div>
       </div>
     </section>

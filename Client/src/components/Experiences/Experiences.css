@@ -1,19 +1,45 @@
 .item-tec{
-    background-color: var(--transparent-red);
     width: 100%;
     margin: 2vh;
     border-radius: 15px;
     padding: 2vh;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .content-background2{
     font-weight: bold;
     border: none;
+    padding-inline: 10%;
+    padding-block: 5%;
+    background-color: black;
 }
 
 .content{
     display: flex;
-    flex-direction: row;
+    flex-direction: wrap;
+}
+
+.button-experience{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+    background-color: var(--transparent-red);
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    -ms-border-radius: 48px;
+    -o-border-radius: 48px;
+    margin-top: 2vh;
+}
+
+.button-experience:hover{
+    color: #fff;
 }
 
 @media screen and (max-width: 500px){
