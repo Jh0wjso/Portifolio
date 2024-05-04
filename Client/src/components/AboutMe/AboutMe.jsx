@@ -10,7 +10,6 @@ export default function AboutMe() {
     <main className="aboutMe" id="#aboutMe">
       <div className="aboutMeContent">
         <div className="whoAmI">
-          <strong className="highlight-text text-center">About Me</strong>
           <div className="d-flex">
             <strong className="highlighted-text h3">aboutMe</strong>
             <strong className="h3"><PiBracketsRoundBold /></strong>
@@ -29,7 +28,7 @@ export default function AboutMe() {
         <div className="my-picture">
           <section className="card">
             <div className="d-flex flex-column mr-5">
-              <strong>Front-end Developer</strong>
+              <strong>Software Engineer</strong>
               <a href="#projects" className="linkCard">Projects</a>
             </div>
             <HiCodeBracket  size={50} />

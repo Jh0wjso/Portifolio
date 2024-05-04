@@ -106,6 +106,14 @@
     width: 300px;
     height: 250px;
   }
+  .my-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 150vh;
+    flex-direction: column;;
+  }
 }
 
 @media screen and (max-width: 910px) {
@@ -164,9 +172,13 @@
     text-align: justify;
     font-size: medium;
   }
-
-  .aboutMeContent {
-    padding: 5%;
+  .my-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    width: 110%;
+    flex-direction: column;
   }
 }
 
