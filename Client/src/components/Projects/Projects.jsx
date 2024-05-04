@@ -12,7 +12,7 @@ import { PiBracketsRoundBold } from "react-icons/pi";
 
 export default function Projects() {
   return (
-    <section className="mainContent container d-flex justify-content-center p-5">
+    <section className="mainContent d-flex justify-content-center">
       <div className="d-flex">
         <strong className="highlighted-text h3">projects</strong>
         <strong className="h3">
