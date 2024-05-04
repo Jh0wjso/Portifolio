@@ -1,5 +1,4 @@
-.item-tec{
-    background-color: var(--transparent-red);
+.item-tec1{
     width: 100%;
     margin: 2vh;
     border-radius: 15px;
@@ -9,6 +8,9 @@
 .content-background{
     font-weight: bold;
     border: none;
+    padding-inline: 10%;
+    margin-block: 2vh;
+    padding-block: 3vh;
 }
 
 .content{
