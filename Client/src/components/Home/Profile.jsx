@@ -17,7 +17,7 @@ export default function Profile() {
             <div className="profile-details-role p-3">
               <span className="primary-text">
                 <h1>
-                  {"Front-end Developer"}
+                  {"Software Engineer"}
                 </h1>
                 <section className="d-flex">
                 <span className="d-flex">

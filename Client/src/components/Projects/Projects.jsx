@@ -39,14 +39,6 @@ export default function Projects() {
           </div>
         </div>
         <div className="card-project">
-          <strong className="logo">Em Produção</strong>
-          <h2 className="title">OnMaps</h2>
-          <img src={OnMaps} alt="OnMaps-logo" className="project" />
-          <div className="button-right">
-            <a onClick={() => {}}>Em Breve</a>
-          </div>
-        </div>
-        <div className="card-project">
           <strong className="logo">Finalizado</strong>
           <h2 className="title">Web Store</h2>
           <img src={Stylos} alt="Stylos-logo" className="project" />
@@ -90,16 +82,6 @@ export default function Projects() {
               target={"_blank"}
             >
               Repositório
-            </a>
-          </div>
-        </div>
-        <div className="card-project">
-          <strong className="logo">Em Breve</strong>
-          <h2 className="title">X-Fut</h2>
-          <img src={Ball} alt="Agrolugue-logo" className="project" />
-          <div className="button-right">
-            <a href="https://www.instagram.com/iohub.tech/" target={"_blank"}>
-              Conheça
             </a>
           </div>
         </div>
