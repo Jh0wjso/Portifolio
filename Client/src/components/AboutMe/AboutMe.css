@@ -183,7 +183,13 @@
 }
 
 @media screen and (max-width: 300px) {
-=======
+  .picture-background {
+    display: none;
+  }
+  .aboutMeText {
+    text-align: justify;
+    font-size: smaller;
+  }
 }
 
 .linkCard {
@@ -337,12 +343,21 @@
     text-align: justify;
     font-size: smaller;
   }
-}
-    font-size: medium;
-  }
 
   .aboutMeContent {
     padding: 5%;
+  }
+
+  .card {
+    background-color: #4b4b4b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80%;
+    height: 30%;
+    margin: 1%;
+    padding: 3%;
   }
 }
 
