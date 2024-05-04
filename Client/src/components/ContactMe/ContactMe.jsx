@@ -30,12 +30,7 @@ export default function ContactMe() {
   return (
     <section class="contact-content rounded container">
       <section class="p-3">
-        <h2 class="text-center font-weight-bold h1 py-5">Mande uma mensagem</h2>
-
-        <p class="text-center mb-5">
-          Para me contatar é simples escreva sua mensagem e aperte em enviar.
-        </p>
-
+        <h2 class="text-center font-weight-bold h1 py-5">Contact Me</h2>
         <div class="row">
           <div class="col-md-8 col-xl-9">
             <form ref={form} onSubmit={sendEmail}>
@@ -50,7 +45,7 @@ export default function ContactMe() {
                       class="form-control"
                     />
                     <label for="contact-name" class="">
-                      Seu Nome
+                      Your Name
                     </label>
                   </div>
                 </div>
@@ -58,14 +53,14 @@ export default function ContactMe() {
                 <div class="col-md-6">
                   <div class="md-form">
                     <input
-                      name="email"
+                      name="e-mail"
                       placeholder="Ex. jhonatansilverio1258@gmail.com"
                       type="text"
                       id="contact-email"
                       class="form-control"
                     />
                     <label for="contact-email" class="">
-                      Seu email
+                      Your e-mail
                     </label>
                   </div>
                 </div>
@@ -76,13 +71,13 @@ export default function ContactMe() {
                   <div class="md-form">
                     <input
                       name="subject"
-                      placeholder="Ex. Trabalho"
+                      placeholder="Ex. Freelancer"
                       type="text"
                       id="contact-Subject"
                       class="form-control"
                     />
                     <label for="contact-Subject" class="">
-                      Assunto
+                      Subject
                     </label>
                   </div>
                 </div>
@@ -93,20 +88,20 @@ export default function ContactMe() {
                   <div class="md-form">
                     <textarea
                       name="message"
-                      placeholder="Aqui você deixa sua mensagem."
+                      placeholder="Here you let your message."
                       type="text"
                       id="contact-message"
                       class="form-control md-textarea"
                       rows="3"
                     ></textarea>
-                    <label for="contact-message">Sua Mensagem</label>
+                    <label for="contact-message">You message</label>
                   </div>
                 </div>
               </div>
               <input
                 class="btn-send btn text-white"
                 type="submit"
-                value="Enviar"
+                value="Send"
               />
             </form>
           </div>
@@ -115,7 +110,7 @@ export default function ContactMe() {
             <ul class="list-unstyled">
               <li>
                 <i class="fa fa-home fa-2x mt-4 blue-text"></i>
-                <p>Bandeirantes-PR, Brazil</p>
+                <p>Brazil</p>
               </li>
 
               <li>
