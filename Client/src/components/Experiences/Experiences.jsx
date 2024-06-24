@@ -26,19 +26,18 @@ export default function Experiences() {
             <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z M.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H.5ZM1 5V2h14v3H1Zm0 1h14v8H1V6Z" />
           </svg>
           <strong style={{ fontSize: 25 }}>
-            Intern <br />
-            at AITEC
+            Software Engineer at Operately
           </strong>
           <small>
-            During my internship at AITEC of UENP, I was responsible for
-            maintaining and developing the agency's website using the Joomla
-            platform. During this period, I managed a large volume of
-            information and attended to various user demands. Additionally, I
-            had the opportunity to perform 3D modeling of parts, execute laser
-            cuts, and integrate technological components.
+            I was a software engineer at Operately, a Serbian startup, where I
+            recently participated in a two-month open-source project.
+            Demonstrating my versatility as a full stack developer, I worked
+            with Elixir, React, TypeScript, and GraphQL. Additionally, I
+            contributed to interface design and backend architecture, ensuring
+            robust, scalable projects that deliver an excellent user experience.
           </small>
           <a
-            href="http://aitec.uenp.edu.br/"
+            href="https://github.com/Jh0wjso/operately"
             target={"_blank"}
             className="button-experience"
           >
@@ -70,6 +69,38 @@ export default function Experiences() {
           </small>
           <a
             href="https://www.csgi.com/"
+            target={"_blank"}
+            className="button-experience"
+          >
+            Visit Web Site
+          </a>
+        </div>
+        <div className="item-tec text-center d-flex flex-column justify-content-center align-items-center">
+          <svg
+            className="p-2 mb-1 mt-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            fill="currentColor"
+            class="bi bi-filetype-html"
+            viewBox="0 0 16 16"
+          >
+            <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z M.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H.5ZM1 5V2h14v3H1Zm0 1h14v8H1V6Z" />
+          </svg>
+          <strong style={{ fontSize: 25 }}>
+            Intern <br />
+            at AITEC
+          </strong>
+          <small>
+            During my internship at AITEC of UENP, I was responsible for
+            maintaining and developing the agency's website using the Joomla
+            platform. During this period, I managed a large volume of
+            information and attended to various user demands. Additionally, I
+            had the opportunity to perform 3D modeling of parts, execute laser
+            cuts, and integrate technological components.
+          </small>
+          <a
+            href="http://aitec.uenp.edu.br/"
             target={"_blank"}
             className="button-experience"
           >
