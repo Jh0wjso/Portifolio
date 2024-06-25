@@ -30,7 +30,6 @@ export default function AboutMe() {
           <section className="card">
             <div className="d-flex flex-column mr-5">
               <strong>Software Engineer</strong>
-              <strong>Front-end Developer</strong>
               <a href="#projects" className="linkCard">Projects</a>
             </div>
             <HiCodeBracket  size={50} />
