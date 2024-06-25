@@ -13,6 +13,31 @@
     border: none;
 }
 
+.contact-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.contact-item{
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contact-item:hover{
+    background: var(--transparent-red);
+}
+
 @media screen and (max-width: 300px){
 
     .my-email{
