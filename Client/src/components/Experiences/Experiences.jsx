@@ -26,7 +26,41 @@ export default function Experiences() {
             <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z M.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H.5ZM1 5V2h14v3H1Zm0 1h14v8H1V6Z" />
           </svg>
           <strong style={{ fontSize: 25 }}>
+            Software Engineer at Pongo Tech Ou
+            <br />
+            2024 - Now
+          </strong>
+          <small>
+            Full-Stack Developer with expertise in ReactJS and serverless AWS
+            solutions, including Amplify, API Gateway, REST, and Lambda.
+            Proficient in Git/GitHub for versioning and collaboration. Skilled
+            in ReactJS, TypeScript, GraphQL, AWS, Material UI, Python,
+            JavaScript, UX/UI, and DevOps.
+          </small>
+          <a
+            href="https://www.gamesession.gg/"
+            target={"_blank"}
+            className="button-experience"
+          >
+            Visit Web Site
+          </a>
+        </div>
+        <div className="item-tec text-center d-flex flex-column justify-content-center align-items-center">
+          <svg
+            className="p-2 mb-1 mt-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            fill="currentColor"
+            class="bi bi-filetype-html"
+            viewBox="0 0 16 16"
+          >
+            <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z M.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5H.5ZM1 5V2h14v3H1Zm0 1h14v8H1V6Z" />
+          </svg>
+          <strong style={{ fontSize: 25 }}>
             Software Engineer at Operately
+            <br />
+            2024 - 2024
           </strong>
           <small>
             I was a software engineer at Operately, a Serbian startup, where I
@@ -58,6 +92,8 @@ export default function Experiences() {
           </svg>
           <strong style={{ fontSize: 25 }}>
             Software Engineer at CSG International
+            <br />
+            2023 - 2024
           </strong>
           <small>
             I worked at a multinational company, where I'm responsible for
@@ -90,6 +126,8 @@ export default function Experiences() {
           <strong style={{ fontSize: 25 }}>
             Intern <br />
             at AITEC
+            <br />
+            2022 - 2023
           </strong>
           <small>
             During my internship at AITEC of UENP, I was responsible for
@@ -109,7 +147,11 @@ export default function Experiences() {
         </div>
         <div className="item-tec text-center d-flex flex-column justify-content-center align-items-center">
           <HiOutlineDesktopComputer size={70} />
-          <strong style={{ fontSize: 25 }}>Freelancer</strong>
+          <strong style={{ fontSize: 25 }}>
+            Freelancer
+            <br />
+            2020 - Now
+          </strong>
           <small>
             Since 2020, I've been operating as a freelance web developer,
             crafting bespoke web applications for clients worldwide. With a

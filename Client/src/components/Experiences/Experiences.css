@@ -1,5 +1,5 @@
 .item-tec{
-    width: 100%;
+    width: 20vw;
     margin: 2vh;
     border-radius: 15px;
     padding: 2vh;
@@ -19,7 +19,9 @@
 
 .content{
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-experience{
