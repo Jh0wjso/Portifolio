@@ -21,7 +21,7 @@ export default function Profile() {
                 </h1>
                 <section className="d-flex">
                 <span className="d-flex">
-                  <h1 className="h1">+02</h1>
+                  <h1 className="h1">+03</h1>
                   <span className="w-50 ml-1" style={{color: "#b1b1b1", fontWeight: "bold"}}>years of experience </span>
                 </span>
                 <span className="d-flex">
