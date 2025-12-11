@@ -13,31 +13,42 @@ export default function AboutMe() {
           <strong className="highlight-text text-center">About Me</strong>
           <div className="d-flex">
             <strong className="highlighted-text h3">aboutMe</strong>
-            <strong className="h3"><PiBracketsRoundBold /></strong>
+            <strong className="h3">
+              <PiBracketsRoundBold />
+            </strong>
           </div>
           <p className="aboutMeText">
-            I have been studying software development since 2019 and working as
-            a freelancer for over a year, with web applications I have already
-            developed some web applications for physical stores that did not
-            have WEB applications, and Landing Pages for other businesses and
-            always concerned about the user experience and using data metrics to
-            achieve high retention rates I have already created four mobile
-            applications, my specialties are React, React Native, JavaScript,
-            TailwindCSS, NextJs, NestJS, PHP.
+            I have been studying software development since 2019 and have worked
+            as a freelancer for over a year, building web applications for local
+            businesses and developing landing pages focused on user experience
+            and data-driven optimization to achieve high engagement and
+            retention. I have also developed four mobile applications and gained
+            solid experience across frontend, backend, and API integration.
+            <br /> My technical background includes React, React Native,
+            JavaScript, TailwindCSS, Next.js, NestJS, and PHP. In recent years,
+            I expanded my expertise into cloud and distributed systems, which
+            led me to earn the AWS Solutions Architect – Associate (SAA-C03)
+            certification. This certification validates my ability to design
+            secure, scalable, and high-performance architectures using AWS
+            services.
           </p>
         </div>
         <div className="my-picture">
           <section className="card">
             <div className="d-flex flex-column mr-5">
               <strong>Software Engineer</strong>
-              <a href="#projects" className="linkCard">Projects</a>
+              <a href="#projects" className="linkCard">
+                Projects
+              </a>
             </div>
-            <HiCodeBracket  size={50} />
+            <HiCodeBracket size={50} />
           </section>
           <section className="card">
             <div className="d-flex flex-column mr-5">
               <strong>Contact me</strong>
-              <a href="#contact" className="linkCard">Hire me!</a>
+              <a href="#contact" className="linkCard">
+                Hire me!
+              </a>
             </div>
             <RiBracesLine size={50} />
           </section>
