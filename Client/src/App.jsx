@@ -9,6 +9,7 @@ import Technologies from "./components/Technologies/Technologies";
 import Projects from "./components/Projects/Projects";
 import Header from "./components/Header/Header";
 import Experiences from "./components/Experiences/Experiences";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           <Footer />
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
