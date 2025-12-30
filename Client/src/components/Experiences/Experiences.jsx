@@ -28,7 +28,7 @@ export default function Experiences() {
           <strong style={{ fontSize: 25 }}>
             Software Engineer at GameSession.gg
             <br />
-            2024 - Now
+            2024 - 2025
           </strong>
           <small>
             Full-Stack Developer with expertise in ReactJS and serverless AWS
