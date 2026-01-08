@@ -13,6 +13,7 @@
     "@vercel/analytics": "^1.6.1",
     "better-react-carousel": "^1.1.1",
     "bootstrap": "^5.2.3",
+    "embla-carousel-react": "^8.6.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
