@@ -7,6 +7,33 @@
     justify-content: center;
 }
 
+.embla {
+    overflow: hidden;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    flex: 0 0 auto;
+    min-width: 0;
+    margin-right: 20px;
+    transition: filter 0.3s ease;
+}
+
+.embla__slide.inactive {
+    filter: blur(3px);
+    opacity: 0.6;
+}
+
+.embla__slide.active {
+    filter: blur(0px);
+    opacity: 1;
+}
+
 .projects{
     flex-direction: row;
 }

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 0,
+    "logo": "Ongoing",
+    "title": "GameSession.gg",
+    "image": "GameSessionGG",
+    "alt": "BMI-Calculator-logo",
+    "buttonText": "Website",
+    "url": "https://www.gamesession.gg/"
+  },
+  {
+    "id": 1,
+    "logo": "Contribution",
+    "title": "Operately",
+    "image": "operately",
+    "alt": "coinCotation-logo",
+    "buttonText": "Repository",
+    "url": "https://github.com/Jh0wjso/operately"
+  },
+  {
+    "id": 2,
+    "logo": "In coming soon",
+    "title": "VittaMaisHub",
+    "image": "Vtmh",
+    "alt": "study-platform-logo",
+    "buttonText": "Website",
+    "url": "https://vtmh-app.vercel.app/"
+  },
+  {
+    "id": 3,
+    "logo": "Finished",
+    "title": "WatchBall",
+    "image": "watchball",
+    "alt": "watchball-logo",
+    "buttonText": "Website",
+    "url": "https://watchball.vercel.app/"
+  },
+  {
+    "id": 4,
+    "logo": "Finished",
+    "title": "Agrolugue",
+    "image": "Agrolugue",
+    "alt": "Agrolugue-logo",
+    "buttonText": "Repository",
+    "url": "https://github.com/Jh0wjso/Geniuscon2022"
+  },
+  {
+    "id": 5,
+    "logo": "My GitHub",
+    "title": "Jh0wjso",
+    "image": "github",
+    "alt": "study-platform-logo",
+    "buttonText": "Take a look",
+    "url": "https://github.com/Jh0wjso"
+  }
+]
