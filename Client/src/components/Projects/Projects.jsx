@@ -6,6 +6,9 @@ import Vtmh from "../../assets/Home/vtmh.png";
 import GameSessionGG from "../../assets/Home/play.png";
 import operately from "../../assets/Home/operately.png";
 import useEmblaCarousel from "embla-carousel-react";
+import MiningAI from "../../assets/Home/miningAi.png";
+import To_Do_List from "../../assets/Home/to_do_list.png";
+
 import projectsData from "../../data/personal_projects.json";
 
 import { PiBracketsRoundBold } from "react-icons/pi";
@@ -20,6 +23,8 @@ export default function Projects() {
     Vtmh,
     watchball,
     Agrolugue,
+    MiningAI,
+    To_Do_List,
     github: "https://cdn-icons-png.flaticon.com/512/25/25231.png"
   };
 

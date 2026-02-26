@@ -46,6 +46,24 @@
   },
   {
     "id": 5,
+    "logo": "Finished",
+    "title": "Mining AI Automation",
+    "image": "MiningAI",
+    "alt": "MiningAI-logo",
+    "buttonText": "Repository",
+    "url": "https://github.com/Jh0wjso/mining-intelligence-ai"
+  },
+  {
+    "id": 6,
+    "logo": "Finished",
+    "title": "Todo List Full Stack(.Net and React)",
+    "image": "To_Do_List",
+    "alt": "Todo_List-logo",
+    "buttonText": "Repository",
+    "url": "https://github.com/Jh0wjso/dotnet_to_do_list"
+  },
+  {
+    "id": 7,
     "logo": "My GitHub",
     "title": "Jh0wjso",
     "image": "github",
