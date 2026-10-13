@@ -1,37 +1,70 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { BsDownload } from "react-icons/bs";
+import React, { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { personalInfo } from "../../data/resume.data";
 import "./Header.css";
 
 export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { label: "About", href: "#about" },
+    { label: "Experience", href: "#experience" },
+    { label: "Skills", href: "#skills" },
+    { label: "Projects", href: "#projects" },
+    { label: "Contact", href: "#contact" },
+  ];
+
   return (
-    <div className="d-flex w-screen container justify-content-between w-100 p-4">
-      <h1>Jhonatan</h1>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        bg="#080808"
-        variant="dark"
-      >
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#aboutme">About me</Nav.Link>
-            <Nav.Link href="#technologies">Technologies</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-      <a
-        href="Curriculo.pdf"
-        download="Jhonatan Silverio.pdf"
-        className="buttonLink"
-      >
-        Resume
-        <BsDownload className="ml-2" />
-      </a>
-    </div>
+    <header className="header">
+      <nav className="navbar-container">
+        <div className="nav-content">
+          <a href="#" className="logo">
+            <span className="logo-bracket">&lt;</span>
+            <span className="logo-text">JS</span>
+            <span className="logo-bracket">/&gt;</span>
+          </a>
+
+          <button
+            className="mobile-toggle"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
+          </button>
+
+          <ul className={`nav-links ${mobileMenuOpen ? "active" : ""}`}>
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} onClick={() => setMobileMenuOpen(false)}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <div className="nav-social">
+            <a
+              href={personalInfo.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              title="LinkedIn"
+            >
+              <FaLinkedin size={20} />
+            </a>
+            <a
+              href={personalInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              title="GitHub"
+            >
+              <FaGithub size={20} />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
   );
 }
