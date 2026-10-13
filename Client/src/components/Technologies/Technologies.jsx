@@ -1,27 +1,52 @@
-import { TechnologiesData } from "../../data/Technologies.data";
-import "./Technologies.css";
 import React from "react";
-import { PiBracketsRoundBold } from "react-icons/pi";
+import {
+  programmingLanguages,
+  frontendTechs,
+  backendTechs,
+  cloudDevOpsTechs,
+} from "../../data/resume.data";
+import "./Technologies.css";
 
 export default function Technologies() {
+  const techSections = [
+    { title: "Programming Languages", techs: programmingLanguages },
+    { title: "Frontend", techs: frontendTechs },
+    { title: "Backend", techs: backendTechs },
+    { title: "Cloud & DevOps", techs: cloudDevOpsTechs },
+  ];
+
   return (
-    <section className="content-background d-flex flex-column">
-      <div className="d-flex">
-        <strong className="highlighted-text h3">skills</strong>
-        <strong className="h3">
-          <PiBracketsRoundBold />
-        </strong>
-      </div>
-      <div className="d-flex flex-wrap justify-content-center">
-        {TechnologiesData.map((item) => (
-          <div className="w-25 item-tec1 d-flex justify-content-center align-items-center">
-            <img
-              src={item.iconPath}
-              alt="JavaScript"
-              width={75}
-            />
-          </div>
-        ))}
+    <section className="skills-section" id="skills">
+      <div className="section-container">
+        <div className="section-header">
+          <h2 className="section-title">
+            <span className="title-bracket">&lt;</span>
+            Skills
+            <span className="title-bracket">/&gt;</span>
+          </h2>
+          <div className="title-underline"></div>
+        </div>
+
+        <div className="tech-grid">
+          {techSections.map((section) => (
+            <div key={section.title} className="tech-category">
+              <h3 className="category-title">{section.title}</h3>
+              <div className="tech-icons">
+                {section.techs.map((tech) => (
+                  <div key={tech.name} className="tech-icon-wrapper" title={tech.name}>
+                    <img
+                      src={tech.icon}
+                      alt={tech.name}
+                      className="tech-icon"
+                      loading="lazy"
+                    />
+                    <span className="tech-name">{tech.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
