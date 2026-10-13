@@ -1,0 +1,151 @@
+.footer {
+  background: #0a0a0a;
+  border-top: 1px solid rgba(36, 255, 0, 0.1);
+  padding: 60px 20px 40px;
+  margin-top: 100px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #24ff00;
+  margin: 0;
+}
+
+.footer-description {
+  font-size: 14px;
+  color: #a0a0a0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 12px 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links li a {
+  font-size: 13px;
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-links li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #24ff00;
+  transition: width 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #24ff00;
+}
+
+.footer-links li a:hover::before {
+  width: 100%;
+}
+
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(36, 255, 0, 0.3), transparent);
+  margin: 40px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: #a0a0a0;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.scroll-to-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(36, 255, 0, 0.1);
+  border: 2px solid rgba(36, 255, 0, 0.3);
+  color: #24ff00;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background: rgba(36, 255, 0, 0.2);
+  border-color: #24ff00;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(36, 255, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px 30px;
+    margin-top: 60px;
+  }
+
+  .footer-content {
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-copyright {
+    order: 2;
+  }
+
+  .scroll-to-top {
+    order: 1;
+  }
+}
