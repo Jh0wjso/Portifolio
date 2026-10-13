@@ -1,54 +1,30 @@
 import React from "react";
 import "./App.css";
+import Header from "./components/Header/Header";
 import Profile from "./components/Home/Profile";
 import AboutMe from "./components/AboutMe/AboutMe";
-import Certifications from "./components/Certifications/Certifications";
-import Footer from "./components/Footer/Footer";
-import ContactMe from "./components/ContactMe/ContactMe";
 import Technologies from "./components/Technologies/Technologies";
-import Projects from "./components/Projects/Projects";
-import Header from "./components/Header/Header";
 import Experiences from "./components/Experiences/Experiences";
-import { Analytics } from "@vercel/analytics/react"
+import Certifications from "./components/Certifications/Certifications";
+import Projects from "./components/Projects/Projects";
+import ContactMe from "./components/ContactMe/ContactMe";
+import Footer from "./components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
-    <div className="MainContent h-100">
+    <div className="app">
       <Header />
-      <div className="d-flex flex-column">
-        <div className="w-100 mb-3">
-          {" "}
-          <Profile />{" "}
-        </div>
-        <div id="aboutme">
-          {" "}
-          <AboutMe />{" "}
-        </div>
-        <div id="certifications">
-          {" "}
-          <Certifications />{" "}
-        </div>
-        <div id="technologies">
-          {" "}
-          <Technologies />{" "}
-        </div>
-        <div id="experiences">
-          {" "}
-          <Experiences />{" "}
-        </div>
-        <div id="projects" className="w-100 text-center">
-          {" "}
-          <Projects />{" "}
-        </div>
-        <div id="contact" className="w-100 text-center ">
-          {" "}
-          <ContactMe />{" "}
-        </div>
-        <div id="footer" className="w-100">
-          {" "}
-          <Footer />
-        </div>
-      </div>
+      <main className="main-content">
+        <Profile />
+        <AboutMe />
+        <Technologies />
+        <Experiences />
+        <Certifications />
+        <Projects />
+        <ContactMe />
+      </main>
+      <Footer />
       <Analytics />
     </div>
   );
