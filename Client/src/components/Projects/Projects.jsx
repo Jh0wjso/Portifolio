@@ -1,78 +1,110 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { FiExternalLink, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { projectsData } from "../../data/resume.data";
 import "./Projects.css";
-import watchball from "../../assets/Home/Wb.png";
-import Agrolugue from "../../assets/Home/agrolugue.png";
-import Vtmh from "../../assets/Home/vtmh.png";
-import GameSessionGG from "../../assets/Home/play.png";
-import operately from "../../assets/Home/operately.png";
-import useEmblaCarousel from "embla-carousel-react";
-import MiningAI from "../../assets/Home/miningAi.png";
-import To_Do_List from "../../assets/Home/to_do_list.png";
-
-import projectsData from "../../data/personal_projects.json";
-
-import { PiBracketsRoundBold } from "react-icons/pi";
 
 export default function Projects() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const imageMap = {
-    GameSessionGG,
-    operately,
-    Vtmh,
-    watchball,
-    Agrolugue,
-    MiningAI,
-    To_Do_List,
-    github: "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+  const next = () => {
+    setCurrentIndex((prev) => (prev + 1) % projectsData.length);
   };
 
-  useEffect(() => {
-    if (!emblaApi) return;
+  const prev = () => {
+    setCurrentIndex((prev) => (prev - 1 + projectsData.length) % projectsData.length);
+  };
 
-    const onSelect = () => {
-      setSelectedIndex(emblaApi.selectedScrollSnap());
-    };
+  const currentProject = projectsData[currentIndex];
 
-    emblaApi.on("select", onSelect);
-    onSelect();
+  const getStatusColor = (status) => {
+    switch (status) {
+      case "Ongoing":
+        return "status-ongoing";
+      case "Completed":
+        return "status-completed";
+      case "In Development":
+        return "status-dev";
+      default:
+        return "";
+    }
+  };
 
-    return () => emblaApi.off("select", onSelect);
-  }, [emblaApi]);
   return (
-    <section className="mainContent d-flex flex-column justify-content-center">
-      <div className="d-flex mb-4">
-        <strong className="highlighted-text h3">professional_projects</strong>
-        <strong className="h3">
-          <PiBracketsRoundBold />
-        </strong>
-      </div>
-      <div className="embla" ref={emblaRef}>
-        <div className="embla__container">
-          {projectsData.map((project) => (
-            <div
-              key={project.id}
-              className={`embla__slide ${
-                selectedIndex === project.id ? "active" : "inactive"
-              }`}
-            >
-              <div className="card-project">
-                <strong className="logo">{project.logo}</strong>
-                <h2 className="title">{project.title}</h2>
-                <img
-                  src={imageMap[project.image]}
-                  alt={project.alt}
-                  className="project"
-                />
-                <div className="button-right">
-                  <a href={project.url} target="_blank">
-                    {project.buttonText}
-                  </a>
-                </div>
+    <section className="projects-section" id="projects">
+      <div className="section-container">
+        <div className="section-header">
+          <h2 className="section-title">
+            <span className="title-bracket">&lt;</span>
+            Projects
+            <span className="title-bracket">/&gt;</span>
+          </h2>
+          <div className="title-underline"></div>
+        </div>
+
+        <div className="projects-content">
+          <div className="project-showcase">
+            <div className={`project-card ${getStatusColor(currentProject.status)}`}>
+              <div className="project-header">
+                <span className={`project-status ${getStatusColor(currentProject.status)}`}>
+                  {currentProject.status}
+                </span>
               </div>
+
+              <h3 className="project-title">{currentProject.title}</h3>
+              <p className="project-description">{currentProject.description}</p>
+
+              <div className="project-highlights">
+                {currentProject.highlights.map((highlight, idx) => (
+                  <span key={idx} className="highlight-tag">
+                    {highlight}
+                  </span>
+                ))}
+              </div>
+
+              <div className="project-technologies">
+                {currentProject.technologies.map((tech) => (
+                  <span key={tech} className="tech-badge">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <a href={currentProject.url} target="_blank" rel="noopener noreferrer" className="project-link">
+                Visit Project
+                <FiExternalLink size={18} />
+              </a>
             </div>
-          ))}
+          </div>
+
+          <div className="projects-nav">
+            <div className="projects-list">
+              {projectsData.map((project, idx) => (
+                <div
+                  key={idx}
+                  className={`project-nav-item ${idx === currentIndex ? "active" : ""}`}
+                  onClick={() => setCurrentIndex(idx)}
+                >
+                  <span className="nav-number">{String(idx + 1).padStart(2, "0")}</span>
+                  <div className="nav-info">
+                    <h4 className="nav-title">{project.title}</h4>
+                    <p className="nav-status">{project.status}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="carousel-controls">
+              <button onClick={prev} className="nav-btn" aria-label="Previous project">
+                <FiChevronLeft size={24} />
+              </button>
+              <span className="carousel-indicator">
+                {String(currentIndex + 1).padStart(2, "0")} / {String(projectsData.length).padStart(2, "0")}
+              </span>
+              <button onClick={next} className="nav-btn" aria-label="Next project">
+                <FiChevronRight size={24} />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
