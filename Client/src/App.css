@@ -1,61 +1,165 @@
-:root{
-  --light-blue : #04C3FF;
-  --light-blue-shadow:  rgb(69 211 255 / 27%);
-  --sea-green: #0ABEAD;
-  --sea-green-dark: #0CBFAE;
-  --sea-green-extra-dark: #09BEAD;
-  --sea-green-shadow: #0bbead66;
-  --header-hamburger-background : #0bbeadcc;
-  --orange: #F57F17;
-  --dark-red: #6a05ad;
-  --orange-shadow: #f57f1733;
-  --white: #ffffff;
-  --black: #333333;
-  --disabled-btn: #09bead7a;
-  --error-message:  #e44f4fd1;
-  --toast-error: #e44f4ffa;
-  --toast-shadow:  #9c9c9ce3;
-  --toast-success: #0CBFAE;
-  --loader-color: #0CBFAE;
-  --red: #da1d1dfa;
-  --transparent-dark: #1a181a8e;
-  --transparent-red: #24FF008e;
-  --header-purple: #2b114d;
-  --bg-purple: #1A0B2E;
-  --card-purple: #693B93;
-  --green: #24FF00;
+:root {
+  --primary-green: #24ff00;
+  --primary-cyan: #00d9ff;
+  --bg-dark: #0a0a0a;
+  --bg-darker: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border-light: rgba(36, 255, 0, 0.1);
+  --border-medium: rgba(36, 255, 0, 0.2);
 }
 
-.MainContent{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+  color: var(--text-primary);
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-cyan);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
+}
+
+.main-content {
   flex: 1;
-  /*Background image com essas cores #000000,#414040 em linear-gradient, da direita para a esquerda*/
-  background-image: linear-gradient(to right,#000000, #2c2c2c);
   width: 100%;
-  height: 100%;
-  background-attachment: fixed;
 }
 
-header{
-  background-color: #1f1e1e7c;
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-::-moz-selection { /* Code for Firefox */
-  color: #c697f2c2;
-  background: #1a1a199f;
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(36, 255, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(36, 255, 0, 0.6);
+  }
+}
+
+/* Global Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-green), transparent);
+  margin: 60px 0;
+}
+
+/* Selection Styling */
 ::selection {
-  color: #24FF00c2;
-  background: #1a1a199f;
+  background: rgba(36, 255, 0, 0.3);
+  color: var(--primary-green);
 }
 
-@media screen and (max-width: 280px){
+::-moz-selection {
+  background: rgba(36, 255, 0, 0.3);
+  color: var(--primary-green);
+}
 
-  .MainContent{
-    background-image: url();
-    margin: 0%;
-    flex: 1;
-    width: 100%;
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
   }
 
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  body {
+    font-size: 13px;
+  }
 }
